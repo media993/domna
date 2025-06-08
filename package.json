@@ -1,0 +1,40 @@
+{
+  "name": "domino-game-server",
+  "version": "1.0.0",
+  "description": "🎲 Domino Game Server - Multiplayer Online Domino Game for 4 Players",
+  "main": "basic-server.js",
+  "scripts": {
+    "start": "node basic-server.js",
+    "dev": "node basic-server.js",
+    "build": "npm run build:client",
+    "build:client": "cd client && npm install && npm run build",
+    "postinstall": "npm run build:client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "domino",
+    "game",
+    "multiplayer",
+    "socket.io",
+    "nodejs",
+    "express",
+    "realtime"
+  ],
+  "author": "Domnia Game Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/domino-game-server.git"
+  },
+  "homepage": "https://domino-game-server-production.up.railway.app"
+}
